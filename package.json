@@ -1,0 +1,29 @@
+{
+  "productName": "electron-bomb",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "fmt": "yarn run prettier && yarn run lint --fix",
+    "lint": "eslint --ignore-pattern=electron-bomb/node_modules .",
+    "prettier": "prettier --write '*.js'",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "~1.7.9"
+  },
+  "devDependencies": {
+    "eslint": "~4.10.0",
+    "eslint-config-oz": "github:johnmuhl/eslint-config-oz#v1.0.0",
+    "prettier": "~1.7.4"
+  },
+  "eslintConfig": {
+    "extends": "oz"
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "useTabs": true
+  }
+}
