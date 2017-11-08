@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "fmt": "yarn run prettier && yarn run lint --fix",
-    "lint": "eslint --ignore-pattern=electron-bomb/node_modules .",
-    "prettier": "prettier --write '*.js'",
-    "start": "electron ."
+    "fmt": "yarn run prettier && yarn run eslint --fix",
+    "start": "electron .",
+    "test": "yarn run eslint",
+    "eslint": "eslint .",
+    "prettier": "prettier --write '*.js'"
   },
   "dependencies": {
     "electron": "~1.7.9"
@@ -14,6 +15,7 @@
   "devDependencies": {
     "eslint": "~4.10.0",
     "eslint-config-oz": "github:johnmuhl/eslint-config-oz#v1.0.0",
+    "greenkeeper-lockfile": "~1.12.0",
     "prettier": "~1.8.1"
   },
   "eslintConfig": {
