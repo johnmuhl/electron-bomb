@@ -1,7 +1,5 @@
 ## electron-bomb
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/johnmuhl/electron-bomb.svg)](https://greenkeeper.io/)
-
 An Electron application that generates crash reports
 and sends them to an [Electron crash report server].
 
