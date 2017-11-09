@@ -7,7 +7,7 @@
     "start": "electron .",
     "test": "yarn run eslint",
     "eslint": "eslint .",
-    "prettier": "prettier --write '*.js'"
+    "prettier": "prettier --write '*.{js,md}'"
   },
   "dependencies": {
     "electron": "~1.7.9"
