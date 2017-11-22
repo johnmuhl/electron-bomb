@@ -10,13 +10,13 @@
     "prettier": "prettier --write '*.{js,md}'"
   },
   "dependencies": {
-    "electron": "~1.7.9"
+    "electron": "^1.7.9"
   },
   "devDependencies": {
-    "eslint": "~4.11.0",
+    "eslint": "^4.11.0",
     "eslint-config-oz": "github:johnmuhl/eslint-config-oz#v1.0.0",
-    "greenkeeper-lockfile": "~1.12.0",
-    "prettier": "~1.8.2"
+    "greenkeeper-lockfile": "^1.12.0",
+    "prettier": "^1.8.2"
   },
   "eslintConfig": {
     "extends": "oz"
