@@ -22,5 +22,8 @@
     "parserOptions": {
       "ecmaVersion": 6
     }
+  },
+  "prettier": {
+    "trailingComma": "all"
   }
 }

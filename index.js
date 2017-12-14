@@ -8,7 +8,7 @@ crashReporter.start({
   companyName: "Electron crash report server",
   extra: { extra: "info from the main process" },
   ignoreSystemCrashHandler: true,
-  submitURL: "https://pacific-falls-32011.herokuapp.com/"
+  submitURL: "https://pacific-falls-32011.herokuapp.com/",
 });
 
 function createWindow() {
@@ -17,8 +17,8 @@ function createWindow() {
   win.loadURL(
     url.format({
       pathname: path.join(__dirname, "index.html"),
-      protocol: "file"
-    })
+      protocol: "file",
+    }),
   );
 
   win.webContents.openDevTools();
