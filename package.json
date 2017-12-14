@@ -13,9 +13,9 @@
     "electron": "^1.7.9"
   },
   "devDependencies": {
-    "eslint": "^4.11.0",
-    "eslint-config-oz": "github:johnmuhl/eslint-config-oz#v1.0.0",
-    "prettier": "^1.8.2"
+    "eslint": "^4.13.1",
+    "eslint-config-oz": "github:johnmuhl/eslint-config-oz#v1.3.0",
+    "prettier": "^1.9.2"
   },
   "eslintConfig": {
     "extends": "oz"
