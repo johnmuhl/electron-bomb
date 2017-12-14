@@ -14,9 +14,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: yarn install
-      - run: yarn greenkeeper-lockfile-update
       - run: yarn test
-      - run: yarn greenkeeper-lockfile-upload
 
       - save_cache:
           key: v1-dependencies-{{ checksum "package.json" }}
