@@ -18,7 +18,7 @@ function createWindow() {
     url.format({
       pathname: path.join(__dirname, "index.html"),
       protocol: "file",
-    }),
+    })
   );
 
   win.webContents.openDevTools();

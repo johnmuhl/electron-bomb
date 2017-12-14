@@ -24,6 +24,6 @@
     }
   },
   "prettier": {
-    "trailingComma": "all"
+    "trailingComma": "es5"
   }
 }
