@@ -4,15 +4,15 @@ const url = require('url')
 let win
 
 crashReporter.start({
-	companyName: 'Company Name',
-	submitURL: 'https://immense-wildwood-62987.herokuapp.com/',
 	autoSubmit: true,
-	ignoreSystemCrashHandler: true,
+	companyName: 'Electron crash report server',
 	extra: {extra: 'info from the main process'},
+	ignoreSystemCrashHandler: true,
+	submitURL: 'https://pacific-falls-32011.herokuapp.com/',
 })
 
 function createWindow () {
-	win = new BrowserWindow({width: 800, height: 600})
+	win = new BrowserWindow({height: 600, width: 800})
 
 	win.loadURL(
 		url.format({
