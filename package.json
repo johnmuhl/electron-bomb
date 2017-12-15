@@ -21,9 +21,26 @@
     "extends": "prettier",
     "parserOptions": {
       "ecmaVersion": 6
+    },
+    "rules": {
+      "comma-dangle": 0,
+      "global-require": 2,
+      "sort-imports": [
+        "error", {
+          "ignoreCase": true
+        }
+      ],
+      "sort-keys": [
+        "error",
+        "asc",
+        {
+          "natural": true
+        }
+      ]
     }
   },
   "prettier": {
+    "proseWrap": "always",
     "trailingComma": "es5"
   }
 }
