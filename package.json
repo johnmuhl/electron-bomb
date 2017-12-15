@@ -13,6 +13,7 @@
     "electron": "^1.7.9"
   },
   "devDependencies": {
+    "eslint": "^4.13.1",
     "eslint-config-oz": "github:johnmuhl/eslint-config-oz#v2.0.0"
   },
   "eslintConfig": {
