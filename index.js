@@ -1,6 +1,7 @@
 const { app, BrowserWindow, crashReporter } = require("electron");
 const path = require("path");
 const url = require("url");
+
 let win;
 
 crashReporter.start({
