@@ -5,13 +5,13 @@
   💣
 </button>
 <script>
-  const {crashReporter} = require('electron')
+  const { crashReporter } = require("electron");
 
   crashReporter.start({
-    companyName: 'Electron crash report server',
-    submitURL: 'https://pacific-falls-32011.herokuapp.com/',
+    companyName: "Electron crash report server",
+    submitURL: "https://pacific-falls-32011.herokuapp.com/",
     ignoreSystemCrashHandler: true,
     autoSubmit: true,
-    extra: {'extra': 'info from the renderer process'}
-  })
+    extra: { extra: "info from the renderer process" },
+  });
 </script>

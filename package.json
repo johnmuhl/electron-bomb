@@ -14,17 +14,13 @@
   },
   "devDependencies": {
     "eslint": "^4.13.1",
-    "eslint-config-oz": "github:johnmuhl/eslint-config-oz#v1.3.0",
-    "prettier": "^1.9.2"
+    "eslint-config-oz": "github:johnmuhl/eslint-config-oz#v2.0.1"
   },
   "eslintConfig": {
     "extends": "oz"
   },
   "prettier": {
-    "bracketSpacing": false,
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "useTabs": true
+    "proseWrap": "always",
+    "trailingComma": "es5"
   }
 }
