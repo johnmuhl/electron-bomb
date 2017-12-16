@@ -514,9 +514,9 @@ eslint-config-airbnb@*:
   dependencies:
     eslint-config-airbnb-base "^12.1.0"
 
-"eslint-config-oz@github:johnmuhl/eslint-config-oz#v2.0.0":
-  version "2.0.0"
-  resolved "https://codeload.github.com/johnmuhl/eslint-config-oz/tar.gz/8b35f8cc126478527cf415afdda5be6f2c681ee0"
+"eslint-config-oz@github:johnmuhl/eslint-config-oz#v2.0.1":
+  version "2.0.1"
+  resolved "https://codeload.github.com/johnmuhl/eslint-config-oz/tar.gz/de16a20c2b73e486bf6a66791d27de80e2929f07"
   dependencies:
     babel-eslint "*"
     eslint "*"
