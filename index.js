@@ -5,15 +5,21 @@ const url = require("url");
 let win;
 
 crashReporter.start({
-  autoSubmit: true,
   companyName: "Electron crash report server",
   extra: { extra: "info from the main process" },
   ignoreSystemCrashHandler: true,
   submitURL: "https://pacific-falls-32011.herokuapp.com/",
+  uploadToServer: true,
 });
 
 function createWindow() {
-  win = new BrowserWindow({ height: 600, width: 800 });
+  win = new BrowserWindow({
+    height: 600,
+    webPreferences: {
+      nodeIntegration: true,
+    },
+    width: 800,
+  });
 
   win.loadURL(
     url.format({

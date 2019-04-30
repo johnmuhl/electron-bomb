@@ -10,11 +10,15 @@
     "prettier": "prettier --write '*.{js,md}'"
   },
   "dependencies": {
-    "electron": "^1.7.9"
+    "electron": "5.x"
   },
   "devDependencies": {
-    "eslint": "^4.13.1",
-    "eslint-config-oz": "github:johnmuhl/eslint-config-oz#v2.1.0"
+    "eslint": "5.x",
+    "eslint-config-oz": "github:johnmuhl/eslint-config-oz#v2.1.0",
+    "eslint-plugin-flowtype": "3.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x"
   },
   "eslintConfig": {
     "extends": "oz"
