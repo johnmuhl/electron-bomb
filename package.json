@@ -1,30 +1,33 @@
 {
-  "productName": "electron-bomb",
-  "version": "1.0.0",
-  "license": "MIT",
-  "scripts": {
-    "fmt": "yarn run prettier && yarn run eslint --fix",
-    "start": "electron .",
-    "test": "yarn run eslint",
-    "eslint": "eslint .",
-    "prettier": "prettier --write '*.{js,md}'"
-  },
-  "dependencies": {
-    "electron": "5.x"
-  },
-  "devDependencies": {
-    "eslint": "5.x",
-    "eslint-config-oz": "github:johnmuhl/eslint-config-oz#v2.1.0",
-    "eslint-plugin-flowtype": "3.x",
-    "eslint-plugin-import": "2.x",
-    "eslint-plugin-jsx-a11y": "6.x",
-    "eslint-plugin-react": "7.x"
-  },
-  "eslintConfig": {
-    "extends": "oz"
-  },
-  "prettier": {
-    "proseWrap": "always",
-    "trailingComma": "es5"
-  }
+	"productName": "electron-bomb",
+	"version": "2.0.0",
+	"license": "Unlicense",
+	"scripts": {
+		"fmt": "yarn run prettier --loglevel=warn --write '**/*' '!yarn.lock' && yarn run eslint . --fix",
+		"lint": "yarn run prettier --list-different '**/*' '!yarn.lock' && yarn run eslint .",
+		"start": "electron .",
+		"test": "yarn run lint"
+	},
+	"dependencies": {
+		"electron": "5.x"
+	},
+	"devDependencies": {
+		"eslint": "5.x",
+		"eslint-config-airbnb-base": "13.x",
+		"eslint-config-oz": "github:johnmuhl/eslint-config-oz",
+		"eslint-config-prettier": "4.x",
+		"eslint-import-resolver-node": "0.3.2",
+		"eslint-plugin-html": "5.x",
+		"eslint-plugin-import": "2.x",
+		"eslint-plugin-unicorn": "8.x",
+		"prettier": "1.x"
+	},
+	"eslintConfig": {
+		"extends": "oz"
+	},
+	"prettier": {
+		"proseWrap": "always",
+		"trailingComma": "es5",
+		"useTabs": true
+	}
 }

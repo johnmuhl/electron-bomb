@@ -1,17 +1,17 @@
-<!doctype html>
-<meta charset="utf-8">
+<!DOCTYPE html>
+<meta charset="utf-8" />
 <title>electron-bomb</title>
 <button onclick="setImmediate(() => process.crash())">
-  💣
+	💣
 </button>
 <script>
-  const { crashReporter } = require("electron");
+	const { crashReporter } = require("electron");
 
-  crashReporter.start({
-    companyName: "Electron crash report server",
-    submitURL: "https://pacific-falls-32011.herokuapp.com/",
-    ignoreSystemCrashHandler: true,
-    uploadToServer: true,
-    extra: { extra: "info from the renderer process" },
-  });
+	crashReporter.start({
+		companyName: "Electron crash report server",
+		submitURL: "https://pacific-falls-32011.herokuapp.com/",
+		ignoreSystemCrashHandler: true,
+		uploadToServer: true,
+		extra: { extra: "info from the renderer process" },
+	});
 </script>
